@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        form{
+            display: block;
+            justify-content:center;
+            margin: auto ;
+            margin: 10px;
+            padding: 5px;
+            box-sizing: border-box;
+            border: solid;
+            border-color: #000;
+            margin-top: 5rem;
+            color: rgb(0, 255, 242);
+            font-size: 2rem;
+            box-shadow: 3px;
+            /* background-image: url(./Kizaru.png); */
+
+        }
+    </style>
+</head>
+<body>
+    <form action="regLink.php" method="post">
+        <input type="text" name="username" placeholder="Enter username">
+        <input type="password" name="pwd" placeholder="Enter password">
+        Gender:
+       Male <input type="radio" name="gender" value="male">
+       Female <input type="radio" name="gender" value="female">
+        <button type="submit" name="btn">Register</button>
+    </form>
+</body>
+</html>

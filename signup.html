@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    
+    <link rel="stylesheet" href="../bootstrap5">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        .container{
+    font-family: 'Lora', serif;
+ 
+    
+}
+
+.form-div{
+    border-radius: 5px;
+    margin: 50px auto 50px;
+    padding: 25px 15px 10px 15px;
+    border: 2px solid #80ced7;
+    border-radius: 5px;
+    font-size: 1.1em;
+
+}
+
+
+form p{
+    font-size: 0.89em;
+   margin-top: 6px;
+}
+
+.form-div.login{
+    margin-top: 120px;
+}
+
+    </style>
+</head>
+<body>
+<div class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-4 form-div">
+            <h3 class="text-center text-primary">Register</h3>
+            <!-- <div class="alert alert-danger">
+                <li>Username Field Required</li>
+            </div> -->
+
+                <form action="signup.php" method="post">
+                    <div class="form-group">
+                        <label for="full_name">Full Name</label>
+                        <input type="text" class="form-control" name="fullname">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" name="username">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" name="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="number" class="form-control" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" name="password">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cpassword">Confirm Password</label>
+                        <input type="password" class="form-control" name="cpassword">
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" name="btn_signup" class="btn btn-primary form-control mt-3">Sign Up</button>
+                    </div>
+
+                    <p class="text-center">Already Have an Account? <a href="login.php">Login Here</a> </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
